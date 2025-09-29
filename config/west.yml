@@ -15,6 +15,13 @@ manifest:
     - name: zmk-rgbled-widget
       remote: mentako-ya
       revision: main
+     - name: prospector
+      url-base: https://github.com/t-ogura
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
     - name: prospector-zmk-module
       remote: prospector
       revision: v1.0.0
