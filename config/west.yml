@@ -4,20 +4,29 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: mentako-ya
       url-base: https://github.com/mentako-ya
+    - name: prospector
+      url-base: https://github.com/t-ogura
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
     - name: zmk-pmw3610-driver
       remote: mentako-ya
       revision: main
+      path: modules/zmk-pmw3610-driver
+
     - name: zmk-rgbled-widget
       remote: mentako-ya
       revision: main
+      path: modules/zmk-rgbled-widget
+
     - name: prospector-zmk-module
       remote: prospector
       revision: v1.0.0
       path: modules/prospector-zmk-module
+
   self:
     path: config
